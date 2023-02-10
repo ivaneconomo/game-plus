@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Iván",
+      "email": "ivan.economo39@gmail.com",
+      "password": "asd123",
+      "admin": true
+    },
+    {
+      "id": 1,
+      "name": "Leonel",
+      "email": "leonelgomez.sk8@gmail.com",
+      "password": "asd123",
+      "admin": true
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Doom",
+      "description": "Juego",
+      "url": "https://www.google.com"
+    },
+    {
+      "id": 2,
+      "title": "Doom 2",
+      "description": "Juego",
+      "url": "https://www.google.com"
+    }
+  ]
+}
