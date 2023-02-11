@@ -7,21 +7,39 @@
   <title>Register GP</title>
   <link rel="icon" href="./assets/logo.png">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/register.css">
 </head>
 <body>
   <header>
-
+    <div class="container-fluid sticky-top text-white py-3 bg-nb-blue">
+      Navbar
+    </div>
   </header>
-
-  <main>
-    <h1>Registrar nuevo usuario</h1>
+  <main class="vh-100 d-flex justify-content-center align-items-center bg-blue">
+    <div class="container cdm-blue text-white rounded shadow-lg col-md-6">
+      <form class="p-3">
+        <div class="mb-3">
+          <label for="nombreRegistro" class="form-label">Nombre completo</label>
+          <input type="text" class="form-control" id="nombreRegistro" maxlength="60" autofocus required>
+        </div>
+        <div class="mb-3">
+          <label for="emailRegistro" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailRegistro" maxlength="60" required>
+        </div>
+        <div class="mb-3">
+          <label for="contrasenaRegistro" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="contrasenaRegistro" maxlength="60" required>
+        </div>
+        <button type="button" class="btn btn-blue text-white">Submit</button>
+      </form>
+    </div>
   </main>
 
   <footer>
 
   </footer>
-
   <script src="./js/app.js"></script>
+  <script src="./js/register.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
