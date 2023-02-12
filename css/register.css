@@ -20,10 +20,20 @@
     color: #fff;
 }
 
-.btn-blue:hover {
+.btn-blue:hover, .btn-login:hover {
     background-color: var(--nb-blue);
 }
 
 .cdm-blue {
     background-color: var(--cdm-blue);
 }
+
+.img-login {
+    width: 25px;
+}
+
+.logo {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    width: 90%;
+  }
