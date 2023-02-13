@@ -1,0 +1,31 @@
+body{
+  font-family: 'Crimson Text', serif;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+.contenedor{
+  background: #144272;
+}
+
+
+main{
+  background-color:#ffff;
+}
+.divs{
+  background-color:#205295;
+}
+
+.btnmarg{
+  background:#2C74B3;
+  width: 260px;
+  
+}
+.btnmarg:hover{
+background:#0A2647;
+}
+
+
+.img{
+  width: 100px;
+}  
+ 
