@@ -1,4 +1,8 @@
 const juego = JSON.parse(localStorage.getItem('gamePag'));
+if(juego == undefined){
+  window.location = './index.html'
+}
+
 document.getElementById('headTitle').innerHTML = `Game-Plus ${juego.title}`;
 
 const portada = document.createElement('div');
@@ -14,7 +18,7 @@ bg.style.width = "100%";
 bg.style.height = "400px";
 
 const artic = document.createElement('div');
-artic.className = 'col-12 px-3 px-md-4 px-lg-5 py-4 border border-secondary border-2 bgCards text-white';
+artic.className = 'col-12 px-3 px-md-4 px-lg-5 py-4 border border-secondary border-2 bgCardsGrad text-white';
 artic.innerHTML = 
 `<p>${juego.description}</p>
   <div class="d-md-flex justify-content-center col-12 mt-3">
