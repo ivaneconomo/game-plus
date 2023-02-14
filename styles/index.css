@@ -1,0 +1,222 @@
+.imgPort{
+  width: 100%;
+  filter:opacity(55%)
+}
+
+#gameDes{
+  position: relative;
+  background-color: #000000;
+	font-size: 16px;
+}
+
+.divDes{
+	position: absolute;
+  bottom: 22%;
+  left: 7%;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 2.7em;
+	margin-bottom: 0.4em;
+}
+
+.description {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	margin-bottom: 1.25em;
+}
+
+.botonDes{
+  background-color: rgba(0, 0, 0, 0.521);
+  color: #fff;
+  font-size: 1.12em;
+  padding: 0.73em 1.87em;
+}
+
+.botonDes:hover{
+  background-color: #fff;
+  color: #000000;
+}
+
+.botonDes i{
+  margin-right: 15px;
+}
+
+.catEgory h3{
+	font-size: 2em;
+}
+
+.contenedor-principal {
+	display: flex;
+	align-items: center;
+	position: relative;
+  background-color: #2053959d;
+  border: solid black 2px;
+  transition: 1.2s ease all;
+}
+
+.contenedor-principal:hover{
+  background-color: #00000061;
+}
+
+.flecha-izquierda, .flecha-derecha {
+	position: absolute;
+	border: none;
+  border-radius: 10px;
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 40px;
+	height: 50%;
+	top:  calc(50% - 25%);
+	line-height: 40px;
+	width: 50px;
+	color: #fff;
+	cursor: pointer;
+	z-index: 500;
+	transition: .2s ease all;
+}
+
+.flecha-izquierda:hover, .flecha-derecha:hover {
+	background: rgba(0, 0, 0, 0.943);
+}
+
+.flecha-izquierda {
+	left: 0;
+}
+.flecha-derecha {
+	right: 0;
+}
+
+.contenedor-carousel {
+	width: 100%;
+	padding: 20px 0px;
+	overflow: hidden;
+	scroll-behavior: smooth;
+}
+
+.carousel {
+	display: flex;
+	flex-wrap: nowrap;
+}
+
+.carousel .juego {
+	min-width: 20%;
+	transition: .3s ease all;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+}
+
+.carousel .juego:hover {
+	transform: scale(1.2);
+	transform-origin: center;
+}
+
+.carousel .juego img {
+	width: 100%;
+	vertical-align: top;
+  height: 100%;
+  border: 2px #000000 solid;
+  border-radius: 2px;
+  transition: 0.5s all;
+	cursor: pointer;
+}
+
+.carousel .juego img:hover {
+  border: 1.5px #ffffff solid;
+  border-radius: 20px;
+}
+
+.modal-content{
+	background-color: #133c689f;
+	color: #fff;
+	border: rgba(128, 128, 128, 0.491) 2px solid;
+}
+
+@media (768px <= width < 1100px) { 
+	.carousel .juego {
+		min-width: 25%;
+	}
+	
+	.divDes{
+		bottom: 19%;
+		left: 7%;
+	}
+	#gameDes{
+		font-size: 13px;
+	}
+	.catEgory{
+		font-size: 11px;
+	}
+}
+
+@media (565px <= width < 768px) { 
+	.carousel .juego {
+		min-width: 50%;
+	}
+	.carousel {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.divDes{
+		bottom: 3%;
+		left: 0%;
+		padding: 0px 2em;
+	}
+	#gameDes{
+		font-size: 10px;
+	}
+	.title {
+		text-align: center;
+	}
+	.catEgory{
+		font-size: 8px;
+	}
+}
+
+@media (500px <= width < 565px) {
+	.carousel .juego {
+		min-width: 50%;
+	}
+	.carousel {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.divDes{
+		bottom: 3%;
+		left: 0%;
+		padding: 0px 2em;
+	}
+	#gameDes{
+		font-size: 8px;
+	}
+	.title {
+		text-align: center;
+	}
+	.catEgory{
+		font-size: 8px;
+	}
+}
+
+@media (272px <= width < 500px) { 
+	.carousel .juego {
+		min-width: 50%;
+	}
+	.carousel {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+	.divDes{
+		bottom: 3%;
+		left: 0%;
+		padding: 0px 2em;
+	}
+	#gameDes{
+		font-size: 5.5px;
+	}
+	.title {
+		text-align: center;
+	}
+	.catEgory{
+		font-size: 8px;
+	}
+}
