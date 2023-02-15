@@ -1,0 +1,39 @@
+/* Variables Generales */
+:root {
+    --nb-blue: #0A2647;
+    --bg-blue: #144272;
+    --cdm-blue: #205295;
+    --btn-blue: #2C74B3;
+    --bg-footer: #444547;
+  }  
+
+.bg-nb-blue {
+    background-color: var(--nb-blue);
+}
+
+.bg-blue {
+    background-color: var(--bg-blue);
+}
+
+.btn-blue {
+    background-color: var(--btn-blue);
+    color: #fff;
+}
+
+.btn-blue:hover, .btn-login:hover {
+    background-color: var(--nb-blue);
+}
+
+.cdm-blue {
+    background-color: var(--cdm-blue);
+}
+
+.img-login {
+    width: 25px;
+}
+
+.logo {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    width: 90%;
+  }
