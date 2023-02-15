@@ -17,7 +17,7 @@
         <div class="d-flex justify-content-center col-12"><img src="./assets/logo.png" alt="logo" class="img mx-5" ></div>
         <h4 class="text-center text-white fw-bold">Iniciar sesión</h4>
 
-        <form name="login" class="text-dark p-3 mt-3 col-12 col-lg-12">
+        <form name="login" class=" needs-validation text-dark p-3 mt-3 col-12 col-lg-12" novalidate>
           <div class="mb-3 ">
             <input type="email" minlength="10" name="usuario" value="" class="form-control inputLog " id="floatingInput" placeholder="Correo Electronico" required>
           </div>
@@ -25,49 +25,44 @@
             <input type="password" minlength="6" name="contraseña" value="" class="form-control inputLog" id="floatingPassword" placeholder="Contraseña" required> 
           </div>
           <div class="mb-3 form-check col-12 col-lg-12">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <input type="checkbox" class="form-check-input"  id="exampleCheck1" >
             <label class="form-check-label text-white" for="exampleCheck1">Recordarme</label>
           </div>
           <div class="d-flex justify-content-center col-12 col-lg-12">
-          <input type="button" value="Acceder" class="btn btnmarg text-white fw-bold" ></input>
+          <input type="button" value="Acceder" class="btn btnmarg text-white fw-bold " onclick="" ></input>
           </div>
 
           <div class="mt-3 text-center">
-            <!-- <a href="#" class="text-white text-decoration-none">¿Has Olvidado la Contraseña?</a> -->
-
-            <!-- Button trigger modal -->
           <a class="text-white text-decoration-none newPass" data-bs-toggle="modal" data-bs-target="#exampleModal">
             ¿Has Olvidado la Contraseña?</a>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header headModal d-flex justify-content-center">
-        <h1 class="modal-title ms-5 fs-5 text-white fw-bold" id="exampleModalLabel">Recuperación de Contraseña</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body bodyModal">
-        <p class="text-white">Escribe un correo electrónico de la cuenta que no puedes acceder. Te enviaremos
-          un correo con intrucciones para restablecer tu contraseña.
-        </p>
-        <div class="mt-4 d-flex justify-content-center">
-          <input type="email " class="form-control inputModal " id="floatingPassword" placeholder=" Escribe tu Dirección de Correo">
-        </div>
-      </div>
-      <div class="modal-footer footModal">
-        <button type="button" class="btn text-white buttonModal" data-bs-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn text-white buttonModal">Enviar</button>
-      </div>
-    </div>
-  </div>
-</div>
-            
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                  <div class="modal-header headModal d-flex justify-content-center">
+                  <h1 class="modal-title ms-5 fs-5 text-white fw-bold" id="exampleModalLabel">Recuperación de Contraseña</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body bodyModal">
+                    <p class="text-white">Escribe un correo electrónico de la cuenta que no puedes acceder. Te enviaremosun mensaje con intrucciones para restablecer tu contraseña.</p>
+                    <div class="mt-4 d-flex justify-content-center">
+                      <input type="email " class="form-control inputModal " id="floatingPassword" placeholder=" Escribe tu Dirección de Correo">
+                    </div>
+                  </div>
+                <div class="modal-footer footModal">
+                  <button type="button" class="btn text-white buttonModal" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn text-white buttonModal">Enviar</button>
+                </div>
+                  </div>
+                </div>
+            </div>
           </div>
 
           <div class="d-flex justify-content-center my-2 col-12 col-lg-12">
-            <a class="mx-3 mt-3" href="#"><img src="./assets/facebooklogin.png" width="30px" alt="facebook"></a>
-            <a class="mx-3 mt-3" href="#"><img src="./assets/googlelogin.png" width="30px" alt="gmail"></a>
+            <a class="mx-3 mt-3" href="https://www.facebook.com/?stype=lo&jlou=Afd5mfQmDQQQD46fl8GDLRSNcFM7Br5ts8p4SS9DUok4npV6idnw8LsWC4ydyXxZnSMwh0W7PNUYYlro2bmVLqjL&smuh=45159&lh=Ac8fDesIkFrqYDZjz4k"><img src="./assets/facebooklogin.png" width="30px" alt="facebook"></a>
+            <a class="mx-3 mt-3" href="https://accounts.google.com/login/signinchooser?hl=es&ifkv=AWnogHfifyf_kn-DxhFX52ZJRxlsxWuP_UT02LHE8w8O3aOoKCod5kDWHeXRicuP_9mdsMRs3Lb-&flowName=GlifWebSignIn&flowEntry=ServiceLogin"><img src="./assets/googlelogin.png" width="30px" alt="gmail"></a>
+            <a class="mx-3 mt-3" href="https://www.instagram.com/"><img src="./assets/instagram.png" width="30px" alt="gmail"></a>
+            <a class="mx-3 mt-3" href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZXMifQ%3D%3D%22%7D"><img src="./assets/twitter.png" width="30px" alt="gmail"></a>
           </div>
 
         </form>
