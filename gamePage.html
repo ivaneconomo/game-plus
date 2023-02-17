@@ -4,12 +4,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="headTitle"></title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <title>Game-Plus</title>
   <link rel="icon" href="./assets/logo.png">
-  <link rel="stylesheet" href="./styles/index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -26,10 +23,13 @@
         <div class="collapse navbar-collapse d-lg-flex justify-content-end " id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="#">Sobre Nosotros</a>
+              <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contacto</a>
+              <a class="nav-link" href="./aboutUs.html">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contacto</a>
             </li>
             <li class="nav-item">
               <a type="button" class="nav-link" onclick="logout()">Cerrar sesión</a>
@@ -39,74 +39,14 @@
     </nav>
   </header>
 
-  <main class="py-4">
-    <div id="gameDes">
-    </div>
-    </div>
-
-    <div class="container-carr">
-      <div class="text-white mt-4 ms-4 catEgory" data-aos="fade-right">
-        <h3>Acción</h3>
-      </div>
-      <div class="contenedor-principal" data-aos="fade-up">
-        <button role="button" id="flecha-izquierda-Ac" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
-        <div class="contenedor-carousel" id="carrAccion">
-          <div class="carousel" id="geAccion">
-            
-          </div>
+  <main class="py-5">
+    <section class="container">
+      <div class="row ">
+        <div id="article" class="col-12">
+          
         </div>
-        <button role="button" id="flecha-derecha-Ac" class="flecha-derecha"><i class="fa-solid fa-angle-right"></i></button>
       </div>
-    </div>
-
-    <div class="container-carr">
-      <div class="text-white mt-4 ms-4 catEgory" data-aos="fade-right">
-        <h3>Deportes</h3>
-      </div>
-      <div class="contenedor-principal" data-aos="fade-up">
-        <button role="button" id="flecha-izquierda-De" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
-        <div class="contenedor-carousel" id="carrDeportes">
-          <div class="carousel" id="geDeportes">
-            
-          </div>
-        </div>
-        <button role="button" id="flecha-derecha-De" class="flecha-derecha"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </div>
-
-    <div class="container-carr">
-      <div class="text-white mt-4 ms-4 catEgory" data-aos="fade-right">
-        <h3>Aventura</h3>
-      </div>
-      <div class="contenedor-principal" data-aos="fade-up">
-        <button role="button" id="flecha-izquierda-Av" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
-        <div class="contenedor-carousel" id="carrAventura">
-          <div class="carousel" id="geAventura">
-            
-          </div>
-        </div>
-        <button role="button" id="flecha-derecha-Av" class="flecha-derecha"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </div>
-
-    <div class="container-carr mb-5">
-      <div class="text-white mt-4 ms-4 catEgory" data-aos="fade-right">
-        <h3>Estrategia</h3>
-      </div>
-      <div class="contenedor-principal" data-aos="fade-up">
-        <button role="button" id="flecha-izquierda-Es" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
-        <div class="contenedor-carousel" id="carrEstrategia">
-          <div class="carousel" id="geEstrategia">
-
-          </div>
-        </div>
-        <button role="button" id="flecha-derecha-Es" class="flecha-derecha"><i class="fa-solid fa-angle-right"></i></button>
-      </div>
-    </div>
-    <button type="button" class="d-none" id="startModal" data-bs-toggle="modal" data-bs-target="#exampleModal"></button>
-    <div id="gameModal">
-
-    </div>
+    </section>
   </main>
 
   <footer class="py-3">
@@ -166,14 +106,7 @@
       </div>
     </section>
   </footer>
-
-  <script src="./js/app.js"></script>
-  <script src="./js/index.js"></script>
-  <script src="https://kit.fontawesome.com/9b9406eee5.js" crossorigin="anonymous"></script>
+  <script src="./js/gamePage.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
