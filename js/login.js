@@ -8,6 +8,7 @@
 //     window.location = "./indexAdmin.html"  
 //     alert("bienvenido")
 //   } else{
+//     alert("error")
     
 //   }
 // };
@@ -43,4 +44,3 @@ users.map((user)=>{
     })
   };
 };
-

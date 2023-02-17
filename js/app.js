@@ -351,7 +351,7 @@ const compro = (compr) => {
         id: 1,
         email: "admin123@gmail.com",
         password: "admin159"
-      }
+      },
     ]);
     localStorage.setItem('Users', user);
   }
