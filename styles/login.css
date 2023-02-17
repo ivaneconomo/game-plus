@@ -1,0 +1,81 @@
+body{
+  font-family: 'Crimson Text', serif;
+font-family: 'Josefin Sans', sans-serif;
+}
+
+.contenedor{
+  background: #144272;
+}
+
+
+main{
+  background-color:#ffff;
+}
+.divs{
+  background-color:#205295;
+}
+
+
+.inputLog{
+  caret-color: blue;
+}
+
+
+.inputLog:hover{
+  border: 1px solid #2C74B3;
+}
+
+.btnmarg{
+  background:#2C74B3;
+  width: 260px;
+  
+}
+.btnmarg:hover{
+background:#0A2647;
+}
+
+
+.img{
+  width: 100px;
+}  
+
+.headModal{
+  background:#0A2647
+  ;
+}
+
+.bodyModal{
+  background: #144272;
+}
+
+.footModal{
+  background: #144272;
+}
+
+.inputModal{
+  caret-color: blue;
+  width: 300px;
+  height: 40px;
+}
+
+.inputModal:hover{
+  border: 1px solid #2C74B3
+}
+
+.buttonModal{
+  background:#2C74B3;
+  
+}
+
+.buttonModal:hover{
+  background:#0A2647;
+}
+
+.newPass{
+  cursor: pointer;
+}
+
+.button-close{
+  background-color: #205295;
+
+}
