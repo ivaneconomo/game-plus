@@ -123,9 +123,21 @@ const ocultarContrasena = () => {
     document.getElementById('mostrarContrasena').classList.remove('d-none');
     document.getElementById('ocultarContrasena').classList.add('d-none');
 };
+const mostrarRepContrasena = () => {
+    document.getElementById('repContrasenaRegistro').type='text';
+    document.getElementById('mostrarRepContrasena').classList.add('d-none');
+    document.getElementById('ocultarRepContrasena').classList.remove('d-none');
+};
+const ocultarRepContrasena = () => {
+    document.getElementById('repContrasenaRegistro').type='password';
+    document.getElementById('mostrarRepContrasena').classList.remove('d-none');
+    document.getElementById('ocultarRepContrasena').classList.add('d-none');
+};
 
 document.getElementById('mostrarContrasena').addEventListener ('click', mostrarContrasena);
 document.getElementById('ocultarContrasena').addEventListener ('click', ocultarContrasena);
+document.getElementById('mostrarRepContrasena').addEventListener ('click', mostrarRepContrasena);
+document.getElementById('ocultarRepContrasena').addEventListener ('click', ocultarRepContrasena);
 
 document.getElementById('nombreRegistro').addEventListener('change', obtenerNombre);
 document.getElementById('emailRegistro').addEventListener('change', validarEmail);
