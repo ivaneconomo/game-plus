@@ -26,8 +26,3 @@ button{
   background-color:aquamarine;
   font-size: 20px; 
 } 
-@media screen and (max-width: 630px){
-  h1{
-    font-size: 16px;
-  }
-}
