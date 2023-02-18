@@ -351,27 +351,15 @@ const compro = (compr) => {
         id: 1,
         email: "admin123@gmail.com",
         password: "admin159"
-      }
+      },
+      {
+        name: "Usuario",
+        id: 2,
+        email: "usuario123@gmail.com",
+        password: "usuario159"
+      },
     ]);
     localStorage.setItem('Users', user);
   }
 }
 compro(user);
-
-
-const card = () =>{
-  const posteos = JSON.parse(localStorage.getItem('Posts'));
-  posteos.map((post) =>{
-    let pos = document.createElement('div');
-    pos.innerHTML = `
-    <div class="card" style="width: 18rem;">
-    <img src="${post.url}" class="card-img-top" alt="imagen">
-    <div class="card-body">
-      <h5 class="card-title">${post.title}</h5>
-      <p class="card-text">${post.description}</p>
-    </div>
-    </div>
-    `
-    document.getElementById('prueba').appendChild(pos);
-  })
-}
