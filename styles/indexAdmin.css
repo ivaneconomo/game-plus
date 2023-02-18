@@ -1,0 +1,16 @@
+.Estadísticas{
+  background-color: rgba(0, 0, 0, 0.295);
+}
+
+.postsScroll{
+  height: 1300px;
+  overflow-y: scroll;
+}
+
+#posts{
+  border: solid 2px white;
+}
+
+.bgPos{
+  background-color: #0a2647
+}
