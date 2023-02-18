@@ -94,9 +94,10 @@ const verificarContrasenas = () => {
 const registrarUsuario = () => {
   try {
     if (nombreRegistro !== '' && emailRegistro !== '' && contrasenaRegistro !== '') {
+      const nuevoId = users[users.length - 1].id + 1;
       const nuevoUsuario = {
         name: nombreRegistro,
-        id: users.length +1,
+        id: nuevoId,
         email: emailRegistro,
         password: contrasenaRegistro
       };
@@ -111,60 +112,21 @@ const registrarUsuario = () => {
   };
 };
 
+const mostrarContrasena = () => {
+    document.getElementById('contrasenaRegistro').type='text';
+    document.getElementById('mostrarContrasena').classList.add('d-none');
+    document.getElementById('ocultarContrasena').classList.remove('d-none');
+};
+const ocultarContrasena = () => {
+    document.getElementById('contrasenaRegistro').type='password';
+    document.getElementById('mostrarContrasena').classList.remove('d-none');
+    document.getElementById('ocultarContrasena').classList.add('d-none');
+};
+
+document.getElementById('mostrarContrasena').addEventListener ('click', mostrarContrasena);
+document.getElementById('ocultarContrasena').addEventListener ('click', ocultarContrasena);
+
 document.getElementById('nombreRegistro').addEventListener('change', obtenerNombre);
 document.getElementById('emailRegistro').addEventListener('change', validarEmail);
 document.getElementById('contrasenaRegistro').addEventListener('change', obtenerContrasena);
 document.getElementById('repContrasenaRegistro').addEventListener('change', verificarContrasenas);
-
-
-
-////////////////////////////////////////////////////////////////////////////
-// Devuelve el correo encontrado o de lo contrario devuelve Undefined
-// const findEmail = users.find((user) => {
-//   console.log(user.email);
-//   return user.email == emailIngresado;
-// });
-
-// if (findEmail == undefined) {
-//   console.log(`Email disponible: ${emailIngresado}`);
-// } else {
-//   console.log(`Email NO disponible: ${emailIngresado}`);
-// };
-
-
-// const validarEmail = () => {
-//   const regexEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
-//   const emailIngresado = document.getElementById('emailRegistro').value.toLowerCase();
-  
-//   if (!document.getElementById('emailDisp').classList.contains('d-none')) {
-//     document.getElementById('emailDisp').classList.add('d-none');
-//   };
-//   if (!document.getElementById('emailNoDisp').classList.contains('d-none')) {
-//     document.getElementById('emailNoDisp').classList.add('d-none');
-//   };
-//   if (!document.getElementById('formatoInvalido').classList.contains('d-none')) {
-//     document.getElementById('formatoInvalido').classList.add('d-none');
-//   };
-
-//   try {
-//       if (regexEmail.test(emailIngresado)) {
-//           users.map((user) => {
-//               if (emailIngresado !== user.email && emailIngresado !== '') {
-//                   emailRegistro = emailIngresado;
-//                   document.getElementById('emailDisp').classList.remove('d-none');
-//                   return emailRegistro;
-//               } else {
-//                 document.getElementById('emailNoDisp').classList.remove('d-none');
-//                 emailRegistro = '';
-//                 throw new Error('Email ingresado ya registrado.');
-//               };
-//           });
-//       } else {
-//         document.getElementById('formatoInvalido').classList.remove('d-none');
-//         emailRegistro = '';
-//         throw new Error('Formato email no válido.');
-//       };
-//   } catch (error) {
-//     console.warn(error.message);
-//   };
-// };
