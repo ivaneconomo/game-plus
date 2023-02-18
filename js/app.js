@@ -363,21 +363,3 @@ const compro = (compr) => {
   }
 }
 compro(user);
-
-
-const card = () =>{
-  const posteos = JSON.parse(localStorage.getItem('Posts'));
-  posteos.map((post) =>{
-    let pos = document.createElement('div');
-    pos.innerHTML = `
-    <div class="card" style="width: 18rem;">
-    <img src="${post.url}" class="card-img-top" alt="imagen">
-    <div class="card-body">
-      <h5 class="card-title">${post.title}</h5>
-      <p class="card-text">${post.description}</p>
-    </div>
-    </div>
-    `
-    document.getElementById('prueba').appendChild(pos);
-  })
-}

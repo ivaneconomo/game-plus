@@ -1,4 +1,4 @@
-const games = JSON.parse(localStorage.getItem('Posts'));
+const games = JSON.parse(localStorage.getItem('Posts')).reverse();
 const game = games.find(element => element.destacado == true);
 const destacado = document.createElement('img');
 destacado.setAttribute('src',`${game.url}`);
