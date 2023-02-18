@@ -1,0 +1,33 @@
+body{
+  background-color: #2C74B3;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+img{
+  width: 400px;
+}
+.contaienr-404{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  color: #fff;
+  font-size: 20px;
+  padding: 25px;
+}
+button{
+  padding: 10px 10px;
+  border-radius: 10px;
+  border: none;
+  background-color:aquamarine;
+  font-size: 20px; 
+} 
+@media screen and (max-width: 630px){
+  h1{
+    font-size: 16px;
+  }
+}
