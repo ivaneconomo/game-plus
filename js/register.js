@@ -103,6 +103,7 @@ const registrarUsuario = () => {
       };
       users.push(nuevoUsuario);
       localStorage.setItem('Users', JSON.stringify(users));
+      alert('Registrado');
     } else {
       throw new Error('Debe completar todos los campos correctamente para poder registrarse.')
     };
