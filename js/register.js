@@ -103,12 +103,31 @@ const registrarUsuario = () => {
       };
       users.push(nuevoUsuario);
       localStorage.setItem('Users', JSON.stringify(users));
-      alert('Registrado');
+      Swal.fire({
+        title: 'Correcto!',
+        text: 'Usuario registrado con éxito',
+        icon: 'success',
+        allowOutsideClick: 'false',
+        allowEscapeKey: 'false',
+        allowEnterKey: 'false',
+        timer: '2500',
+        confirmButtonColor: '#205295',
+        confirmButtonText: 'Aceptar'
+      });
+      setTimeout(() => window.location = './login.html', 2500)
+      
     } else {
-      throw new Error('Debe completar todos los campos correctamente para poder registrarse.')
+      const alertaCampos = Swal.fire({
+        title :'¡Ups!',
+        text: 'Completa todos los campos correctamente para poder registarte.',
+        icon: 'warning',
+        timer: '3500',
+        confirmButtonColor: '#205295',
+        confirmButtonText: 'Aceptar'
+      });
+      throw new Error(alertaCampos)
     };
   } catch (error) {
-    alert(error.message);
     console.warn(error.message);
   };
 };
