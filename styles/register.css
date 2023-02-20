@@ -38,11 +38,15 @@
     width: 200px;
   }
 
-  .asd {
+  .eye-pos {
     right: 2%;
     top: 14%
   }
 
-  .asd:hover {
+  .eye-pos:hover {
     color: var(--btn-blue)
+  }
+
+  #formatoInvalido, #emailNoDisp, #emailDisp, #noCoincide {
+    font-size: 15px;
   }

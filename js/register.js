@@ -114,8 +114,7 @@ const registrarUsuario = () => {
         confirmButtonColor: '#205295',
         confirmButtonText: 'Aceptar'
       });
-      setTimeout(() => window.location = './login.html', 2500)
-      
+      setTimeout(() => window.location = './login.html', 2500);
     } else {
       const alertaCampos = Swal.fire({
         title :'¡Ups!',
@@ -125,7 +124,7 @@ const registrarUsuario = () => {
         confirmButtonColor: '#205295',
         confirmButtonText: 'Aceptar'
       });
-      throw new Error(alertaCampos)
+      throw new Error(alertaCampos);
     };
   } catch (error) {
     console.warn(error.message);
