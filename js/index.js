@@ -7,6 +7,8 @@ const comprobaruser = (usser)=>{
   }
 } 
 
+comprobaruser(userLogueado);
+
 const games = JSON.parse(localStorage.getItem('Posts')).reverse();
 const game = games.find(element => element.destacado == true);
 const destacado = document.createElement('img');

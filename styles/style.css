@@ -61,3 +61,8 @@ footer{
   color: #fff;
 }
 
+.modal-content, .swal2-modal{
+	background-color: #133c689f !important;
+	color: #fff !important;
+	border: rgba(128, 128, 128, 0.491) 2px solid !important;
+}

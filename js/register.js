@@ -1,3 +1,13 @@
+const userLogueado = JSON.parse(localStorage.getItem('UserLog'));
+
+const comprobaruser = (usser)=>{
+  if(usser != undefined){
+    window.location = './index.html';
+  }
+} 
+
+comprobaruser(userLogueado);
+
 const users = JSON.parse(localStorage.getItem('Users'));
 
 let nombreRegistro = '';
