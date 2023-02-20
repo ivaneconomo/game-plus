@@ -23,7 +23,7 @@ artic.innerHTML =
 `<p>${juego.description}</p>
   <div class="d-md-flex justify-content-center col-12 mt-3">
   <a type="button" href="./index.html" class="btn botones col-12 col-md-2 me-2">Volver</a>
-  <a type="button" href="./error404.html" class="btn botones col-12 col-md-2 me-2">Ver trailer</a>
-  <a type="button" href="./error404.html" class="btn botones col-12 col-md-2">Comprar</a>
+  <a type="button" href="./error404.html" class="btn botones mt-2 mt-md-0 col-12 col-md-2 me-2">Ver trailer</a>
+  <a type="button" href="./error404.html" class="btn botones mt-2 mt-md-0 col-12 col-md-2">Comprar</a>
   </div>`;
 document.getElementById('article').appendChild(artic);

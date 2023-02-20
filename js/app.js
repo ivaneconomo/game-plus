@@ -350,13 +350,64 @@ const compro = (compr) => {
         name: "Admin",
         id: 1,
         email: "admin123@gmail.com",
-        password: "admin159"
+        password: "admin159",
+        alta: 'admin'
       },
       {
         name: "Usuario",
         id: 2,
         email: "usuario123@gmail.com",
-        password: "usuario159"
+        password: "usuario159",
+        alta: false
+      },
+      {
+        name: "leo",
+        id: 3,
+        email: "leo123@gmail.com",
+        password: "leo159",
+        alta: true
+      },
+      {
+        name: "ivan",
+        id: 4,
+        email: "ivan123@gmail.com",
+        password: "ivan159",
+        alta: true
+      },
+      {
+        name: "mauro",
+        id: 5,
+        email: "mauro123@gmail.com",
+        password: "mauro159",
+        alta: true
+      },
+      {
+        name: "carlos",
+        id: 6,
+        email: "carlos123@gmail.com",
+        password: "carlos159",
+        alta: true
+      },
+      {
+        name: "Usuario2",
+        id: 7,
+        email: "usuario2123@gmail.com",
+        password: "usuario2159",
+        alta: false
+      },
+      {
+        name: "Usuario3",
+        id: 8,
+        email: "usuario3123@gmail.com",
+        password: "usuario3159",
+        alta: false
+      },
+      {
+        name: "Usuario4",
+        id: 9,
+        email: "usuario4123@gmail.com",
+        password: "usuario4159",
+        alta: false
       },
     ]);
     localStorage.setItem('Users', user);

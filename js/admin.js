@@ -12,7 +12,7 @@ const users = JSON.parse(localStorage.getItem('Users'));
 let posts = JSON.parse(localStorage.getItem('Posts'));
 
 let userCant = document.createElement('p')
-userCant.innerHTML= `${users.length}`;
+userCant.innerHTML= `${users.length-1}`;
 document.getElementById('usuCant').appendChild(userCant);
 
 let postCant = document.createElement('p')
@@ -203,7 +203,7 @@ const primerosPost = () =>{
 
 primerosPost();
 
-const Vermáspost = () =>{
+const Vermaspost = () =>{
   const n = parseInt(document.getElementById('ultimoPost').textContent);
   const ultimoId = posts.length - n;
   document.getElementById('posts').classList.add('postsScroll')

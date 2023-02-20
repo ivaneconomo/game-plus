@@ -7,7 +7,7 @@
   overflow-y: scroll;
 }
 
-#posts{
+#posts, #userss{
   border: solid 1px white;
 }
 
