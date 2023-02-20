@@ -8,6 +8,8 @@ const comprobaruser = (usser)=>{
   }
 } 
 
+comprobaruser(userLogueado);
+
 let users = JSON.parse(localStorage.getItem('Users'));
 const posts = JSON.parse(localStorage.getItem('Posts'));
 
@@ -251,4 +253,9 @@ document.getElementById("inputSearch").addEventListener("input", function() {
     document.getElementById('userss').classList.remove('postsScroll');
   }
 });
+
+const logout = ()=>{
+  localStorage.removeItem('UserLog');
+  window.location = './login.html';
+}
 

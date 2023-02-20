@@ -8,6 +8,8 @@ const comprobaruser = (usser)=>{
   }
 } 
 
+comprobaruser(userLogueado);
+
 const users = JSON.parse(localStorage.getItem('Users'));
 let posts = JSON.parse(localStorage.getItem('Posts'));
 
