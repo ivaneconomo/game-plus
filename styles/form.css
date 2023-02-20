@@ -7,20 +7,18 @@
 }
 
 body{
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background-color: #144272;
   min-height: 100vh;
   width: 100;
-  display: flex;
   font-family: 'Montserrat', sans-serif;
 }
 
 .form{
-  background-color: #fff;
   width: 90%;
-  margin: auto;
   max-width: 400px;
   border-radius: 1em;
   padding: 3.5em 1.5em;
+  border: solid #e1e1e1 1px;
 }
 
 .form__container{
@@ -65,6 +63,14 @@ body{
   border-radius: .2em;
   cursor: pointer;
   font-weight: 400;
+}
+
+.btn{
+  border: solid #757575 2px;
+}
+
+.btn:hover{
+  border: solid #fff 2px;
 }
 
 @media (max-width:450px) {
