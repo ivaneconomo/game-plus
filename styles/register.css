@@ -33,20 +33,20 @@
 }
 
 .logo {
-    -webkit-filter: drop-shadow(5px 5px 5px #222);
-    filter: drop-shadow(5px 5px 5px #222);
-    width: 200px;
-  }
+  -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  width: 200px;
+}
 
-  .eye-pos {
-    right: 2%;
-    top: 14%
-  }
+.eye-pos {
+  right: 2%;
+  top: 14%
+}
 
-  .eye-pos:hover {
-    color: var(--btn-blue)
-  }
+.eye-pos:hover {
+  color: var(--btn-blue)
+}
 
-  #formatoInvalido, #emailNoDisp, #emailDisp, #noCoincide {
-    font-size: 15px;
-  }
+#formatoInvalido, #emailNoDisp, #emailDisp, #noCoincide {
+  font-size: 15px;
+}
