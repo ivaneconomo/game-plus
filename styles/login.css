@@ -35,10 +35,6 @@ background:#0A2647;
 }
 
 
-.img{
-  width: 100px;
-}  
-
 .headModal{
   background:#0A2647
   ;
@@ -79,3 +75,10 @@ background:#0A2647;
   background-color: #205295;
 
 }
+
+.img{
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    width: 200px;
+  }
+

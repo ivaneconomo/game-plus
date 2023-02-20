@@ -354,7 +354,7 @@ const compro = (compr) => {
       },
       {
         name: "Usuario",
-        id: 1,
+        id: 2,
         email: "usuario123@gmail.com",
         password: "usuario159"
       },
