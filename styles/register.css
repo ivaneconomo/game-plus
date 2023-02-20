@@ -47,6 +47,6 @@
   color: var(--btn-blue)
 }
 
-  #formatoInvalido, #emailNoDisp, #emailDisp, #noCoincide {
-    font-size: 15px;
-  }
+#formatoInvalido, #emailNoDisp, #emailDisp, #noCoincide {
+  font-size: 15px;
+}
