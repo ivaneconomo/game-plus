@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #144272;
+  min-height: 100vh;
+  width: 100;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form{
+  width: 90%;
+  max-width: 400px;
+  border-radius: 1em;
+  padding: 3.5em 1.5em;
+  border: solid #e1e1e1 1px;
+}
+
+.form__container{
+  width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-auto-columns: 100%;
+}
+
+.form__title{
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: .4em;
+}
+
+.form__imput{
+  font-family: inherit;
+  font-size: 1rem;
+  padding: .8em 1em;
+  outline: none;
+  border: none;
+  border: 3px solid #bbb0b0;
+  border-radius: 0.2em;
+}
+
+.form__imput--message{
+  resize: none;
+  padding: 1.8em 1em;
+  margin-bottom: .5em;
+
+
+}
+
+.form__cta{
+  font-family: inherit;
+  background-color: #089fe0;
+  color: #ffffff;
+  border: none;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: .7em 0;
+  border-radius: .2em;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.btn{
+  border: solid #757575 2px;
+}
+
+.btn:hover{
+  border: solid #fff 2px;
+}
+
+@media (max-width:450px) {
+  .form{
+    padding: 3.5em 1.5em;
+  }
+  
+}

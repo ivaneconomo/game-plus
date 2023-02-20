@@ -35,5 +35,19 @@
 .logo {
     -webkit-filter: drop-shadow(5px 5px 5px #222);
     filter: drop-shadow(5px 5px 5px #222);
+<<<<<<< HEAD
     width: 90%;
 }
+=======
+    width: 200px;
+  }
+
+  .asd {
+    right: 2%;
+    top: 14%
+  }
+
+  .asd:hover {
+    color: var(--btn-blue)
+  }
+>>>>>>> 86f27f4670c5a861c50fb46da40d38e9fb0f4ae2

@@ -1,4 +1,13 @@
-const games = JSON.parse(localStorage.getItem('Posts'));
+const userLogueado = JSON.parse(localStorage.getItem('UserLog'));
+const comprobaruser = (usser)=>{
+  if(usser == undefined){
+    window.location = './login.html';
+  }else if (usser.email == 'admin123@gmail.com' && usser.password == 'admin159'){
+    document.getElementById('linkAdmin').classList.remove('d-none');
+  }
+} 
+
+const games = JSON.parse(localStorage.getItem('Posts')).reverse();
 const game = games.find(element => element.destacado == true);
 const destacado = document.createElement('img');
 destacado.setAttribute('src',`${game.url}`);
@@ -134,6 +143,11 @@ for(let i=0; i<gameClick.length; i++){
       window.location = './gamePage.html';
     })
   });
+}
+
+const logout = ()=>{
+  localStorage.removeItem('UserLog');
+  window.location = './login.html';
 }
 
 
