@@ -1,0 +1,28 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.tarjeta{
+  overflow: hidden;
+  cursor: default;
+  transition: all 400ms ease;
+  margin-left: 1px;
+  margin-right: 1px;
+
+}
+
+.tarjeta:hover{
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transform: scale(1.15);
+}
+
+
+  .bg{
+    background: #144272;
+  }
+
+  .tex{
+    color: #2C74B3;
+  }
