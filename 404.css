@@ -6,6 +6,7 @@ body{
 }
 img{
   width: 400px;
+  padding: 50px;
 }
 .contaienr-404{
   height: 100vh;
@@ -17,7 +18,7 @@ img{
 h1{
   color: #fff;
   font-size: 20px;
-  padding: 25px;
+  padding: 30px;
 }
 button{
   padding: 16px 32px;
