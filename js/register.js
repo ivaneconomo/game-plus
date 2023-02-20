@@ -103,12 +103,31 @@ const registrarUsuario = () => {
       };
       users.push(nuevoUsuario);
       localStorage.setItem('Users', JSON.stringify(users));
-      alert('Registrado');
+      Swal.fire({
+        title: 'Correcto!',
+        text: 'Usuario registrado con éxito',
+        icon: 'success',
+        allowOutsideClick: 'false',
+        allowEscapeKey: 'false',
+        allowEnterKey: 'false',
+        timer: '2500',
+        confirmButtonColor: '#205295',
+        confirmButtonText: 'Aceptar'
+      });
+      setTimeout(() => window.location = './login.html', 2500)
+      
     } else {
-      throw new Error('Debe completar todos los campos correctamente para poder registrarse.')
+      const alertaCampos = Swal.fire({
+        title :'¡Ups!',
+        text: 'Completa todos los campos correctamente para poder registarte.',
+        icon: 'warning',
+        timer: '3500',
+        confirmButtonColor: '#205295',
+        confirmButtonText: 'Aceptar'
+      });
+      throw new Error(alertaCampos)
     };
   } catch (error) {
-    alert(error.message);
     console.warn(error.message);
   };
 };
@@ -123,9 +142,21 @@ const ocultarContrasena = () => {
     document.getElementById('mostrarContrasena').classList.remove('d-none');
     document.getElementById('ocultarContrasena').classList.add('d-none');
 };
+const mostrarRepContrasena = () => {
+    document.getElementById('repContrasenaRegistro').type='text';
+    document.getElementById('mostrarRepContrasena').classList.add('d-none');
+    document.getElementById('ocultarRepContrasena').classList.remove('d-none');
+};
+const ocultarRepContrasena = () => {
+    document.getElementById('repContrasenaRegistro').type='password';
+    document.getElementById('mostrarRepContrasena').classList.remove('d-none');
+    document.getElementById('ocultarRepContrasena').classList.add('d-none');
+};
 
 document.getElementById('mostrarContrasena').addEventListener ('click', mostrarContrasena);
 document.getElementById('ocultarContrasena').addEventListener ('click', ocultarContrasena);
+document.getElementById('mostrarRepContrasena').addEventListener ('click', mostrarRepContrasena);
+document.getElementById('ocultarRepContrasena').addEventListener ('click', ocultarRepContrasena);
 
 document.getElementById('nombreRegistro').addEventListener('change', obtenerNombre);
 document.getElementById('emailRegistro').addEventListener('change', validarEmail);
