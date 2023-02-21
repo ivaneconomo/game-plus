@@ -24,7 +24,6 @@ const loguear = ()=>{
         } else {
           window.location = "./index.html"
         }
-        flag = true;
       } else {
         swal.fire({
           title:"Error",
@@ -36,6 +35,7 @@ const loguear = ()=>{
           confirmButtonColor: '#2C74B3'
           })
       }
+      flag = true;
     };
   })
   if (flag == false) {
