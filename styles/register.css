@@ -7,27 +7,6 @@
     --bg-footer: #444547;
   }  
 
-.bg-nb-blue {
-    background-color: var(--nb-blue);
-}
-
-.bg-blue {
-    background-color: var(--bg-blue);
-}
-
-.btn-blue {
-    background-color: var(--btn-blue);
-    color: #fff;
-}
-
-.btn-blue:hover, .btn-login:hover {
-    background-color: var(--nb-blue);
-}
-
-.cdm-blue {
-    background-color: var(--cdm-blue);
-}
-
 .img-login {
     width: 25px;
 }
@@ -49,4 +28,18 @@
 
 #formatoInvalido, #emailNoDisp, #emailDisp, #noCoincide {
   font-size: 15px;
+}
+
+.btn-loginG, .btn-loginF{
+  border: solid #ffffff49 1px;
+}
+
+.btn-loginG:hover{
+  background-color: rgba(195, 8, 8, 0.708);
+  border: solid #ffffffc9 1px;
+}
+
+.btn-loginF:hover{
+  background-color: rgba(8, 105, 195, 0.708);
+  border: solid #ffffffc9 1px;
 }
