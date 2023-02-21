@@ -124,7 +124,7 @@ for(let i=0; i<gameClick.length; i++){
         <div class="modal-content">
           <div class="modal-header text-center">
             <h1 class="modal-title fs-5" id="exampleModalLabel">${gameModal.title}</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <img src="${gameModal.url}" width="100%" style="border:solid #fff 2px;border-radius:10px;">
@@ -132,7 +132,7 @@ for(let i=0; i<gameClick.length; i++){
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button class="btn" id="verMas" style="background-color: #2c74b3;">Ver más</button>
+            <button class="btn botones" id="verMas">Ver más</button>
           </div>
         </div>
       </div>
