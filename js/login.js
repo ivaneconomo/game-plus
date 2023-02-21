@@ -13,17 +13,33 @@ const loguear = ()=>{
   const userEmail = document.login.usuario.value.toLowerCase();
   const userPassword = document.login.contraseña.value;
   let userLog;
+  let flag = false;
   users.map((user)=>{
     if (user.email === userEmail && user.password === userPassword){
-      userLog = user;
-      localStorage.setItem('UserLog', JSON.stringify(userLog));
-      if (userEmail == "admin123@gmail.com" && userPassword == "admin159"){
-        window.location = "./indexAdmin.html" }
-      else {
-        window.location = "./index.html"
+      if (user.alta == true || user.alta === 'admin') {
+        userLog = user;
+        localStorage.setItem('UserLog', JSON.stringify(userLog));
+        if (userEmail == "admin123@gmail.com" && userPassword == "admin159"){
+          window.location = "./indexAdmin.html"
+        } else {
+          window.location = "./index.html"
+        }
+        flag = true;
+      } else {
+        swal.fire({
+          title:"Error",
+          text:"En espera de alta por el administrador.",
+          icon:"error",
+          confirmButtonText:'Reintentar',
+          backdrop: true,
+          allowOutsideClick: false,
+          confirmButtonColor: '#2C74B3'
+          })
       }
-    }else {
-      swal.fire({
+    };
+  })
+  if (flag == false) {
+    swal.fire({
       title:"Error",
       text:"Correo Electronico o Contraseña Incorrecta.",
       icon:"error",
@@ -32,7 +48,6 @@ const loguear = ()=>{
       allowOutsideClick: false,
       confirmButtonColor: '#2C74B3'
       })
-    }
-  })
+  }
 }
 

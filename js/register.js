@@ -109,22 +109,23 @@ const registrarUsuario = () => {
         name: nombreRegistro,
         id: nuevoId,
         email: emailRegistro,
-        password: contrasenaRegistro
+        password: contrasenaRegistro,
+        alta: false
       };
       users.push(nuevoUsuario);
       localStorage.setItem('Users', JSON.stringify(users));
       Swal.fire({
         title: 'Correcto!',
-        text: 'Usuario registrado con éxito',
+        text: 'Usuario registrado con éxito. Un administrador habilitará pronto su acceso.',
         icon: 'success',
         allowOutsideClick: 'false',
         allowEscapeKey: 'false',
         allowEnterKey: 'false',
-        timer: '2500',
+        timer: '5000',
         confirmButtonColor: '#205295',
         confirmButtonText: 'Aceptar'
       });
-      setTimeout(() => window.location = './login.html', 2500);
+      setTimeout(() => window.location = './login.html', 5000);
     } else {
       const alertaCampos = Swal.fire({
         title :'¡Ups!',
