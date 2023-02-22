@@ -55,131 +55,131 @@ const comprobar = (compr) => {
         destacado: false
       },
       {
-        title: "GTA IV",
+        title: "Dead Space Remake",
         id: 7,
-        description: "Grand Theft Auto IV narra la historia de Niko Bellic, un inmigrante ilegal y veterano de la Guerra de Bosnia. Tras ser convencido por su primo Roman, que emigró a Liberty City años antes del comienzo de la historia en el juego, Niko decide abandonar Europa del Este con rumbo a Liberty City, donde espera olvidar su pasado criminal.",
-        url: "https://images3.alphacoders.com/274/274397.jpg",
-        category:"accion",
+        description: "Isaac Clarke es un ingeniero cualquiera con la misión de reparar la descomunal nave extractora USG Ishimura, pero descubrirá que algo ha ido terriblemente mal. La tripulación de la nave ha sido asesinada y su querida compañera Nicole está perdida en algún lugar a bordo.Sin nadie que lo acompañe y armado únicamente con sus herramientas y habilidades de ingeniería, Isaac tendrá que darse prisa para encontrar a Nicole mientras va desvelando el terrorífico misterio de lo sucedido a bordo del Ishimura.",
+        url: "https://images3.alphacoders.com/127/1277778.jpg",
+        category:"aventura",
         destacado: false
       },
       {
-        title: "Call of Duty Black Ops III",
+        title: "God of War: Ragnarok",
         id: 8,
-        description: "40 años después de los acontecimientos en Call of Duty: Black Ops II, el mundo tiene lugar en un futuro distópico, situado en 2065, donde la ciencia y la tecnología han cambiado radicalmente a la especie humana, con la sociedad violenta y las protestas y el intento de detener el progreso de la tecnología.",
-        url: "https://wallpaperaccess.com/full/641787.jpg",
+        description: "God of War: Ragnarok para PlayStation 5 es la secuela de God of War, el reinicio y a la vez secuela de los anteriores God of War para consolas PlayStation. Desarrollado por el prestigioso estudio Sony Santa Monica y con la dirección de Cory Barlog, encontraremos una nueva historia en la que Kratos deberá enfrentarse a diversos enemigos de inspiración nórdica. Explorando los mitos del Ragnarok, el apocalipsis que todo lo devorará según esta tradición del norte, la secuela se espera que llegue en 2021.",
+        url: "https://images3.alphacoders.com/127/1273405.jpg",
         category:"accion",
         destacado: false
       },
       {
-        title: "GTA san andreas",
+        title: "Elden Ring",
         id: 9,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
-        category:"accion",
+        description: "Elden Ring es el nuevo videojuego de FromSoftware, creadores de Dark Souls, Sekiro o Bloodborne. Se trata del nuevo título de acción y rol para un jugador ideado por Hidetaka Miyazaki, que en esta ocasión, estrenará un mundo abierto más grande y ambicioso. Su argumento y mitología están firmados por George R.R. Martin, autor de Canción de hielo y fuego.",
+        url: "https://images4.alphacoders.com/115/1151249.jpg",
+        category:"aventura",
         destacado: false
       },
       {
-        title: "GTA san andreas",
+        title: "Atomic Heart",
         id: 10,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
+        description: "Atomic Heart es un videojuego de acción en primera persona con toques de supervivencia para Xbox Series X, PS5 y PC, así como Xbox One y PS4. El título, desarrollado por Mindfish nos trasladará a un Moscú alternativo en el que los usuarios tendrán que arreglárselas para devolver la paz a un terreno convulso y peligroso, destrozado por el inminente colapso de una todopoderosa y omnipresente Unión Soviética.",
+        url: "https://images4.alphacoders.com/129/1291876.jpg",
         category:"accion",
         destacado: false
       },
       {
-        title: "GTA san andreas",
+        title: "The Last of Us: Parte I",
         id: 11,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
+        description: "Disfruta de la emotiva historia y los inolvidables personajes de The Last of Us, ganador de más de 200 premios de Juego del Año, ahora recreado desde cero.",
+        url: "https://images5.alphacoders.com/408/408539.jpg",
         category:"aventura",
         destacado: false
       },
       {
-        title: "GTA san andreas",
+        title: "Forspoken",
         id: 12,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
+        description: "Forspoken, anteriormente conocido como Project Athia, es el nuevo videojuego de acción y rol de Square Enix para PS5 y PC cuya protagonista deberá explorar un mundo repleto de naturaleza y grandes monstruos, aprovechándose de su agilidad, un aspecto que le permite saltar por grandes acantilados y capacidad para poder para controlar la naturaleza. Desarrollado en Luminous Engine, aprovechará las características técnicas de PS5.",
+        url: "https://images6.alphacoders.com/121/1219079.jpg",
         category:"aventura",
         destacado: false
       },
       {
-        title: "GTA san andreas",
+        title: "The Last of Us: Part II",
         id: 13,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
+        description: "The Last of Us 2 es la secuela de The Last of Us, uno de los juegos más aclamados de la consola PS3, que apareció en 2015 en PS4 en versión remasterizada. Esta continuación ha sido anunciada en el evento PlayStation Experience de diciembre de 2016, generando grandísimas expectativas entre los jugadores.",
+        url: "https://images.alphacoders.com/783/783254.png",
         category:"aventura",
         destacado: false
       },
       {
-        title: "GTA san andreas",
+        title: "FIFA 23",
         id: 14,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
-        category:"aventura",
-        destacado: false
-      },
-      {
-        title: "GTA san andreas",
-        id: 15,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
-        category:"aventura",
-        destacado: false
-      },
-      {
-        title: "GTA san andreas",
-        id: 16,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
-        category:"aventura",
-        destacado: false
-      },
-      {
-        title: "GTA san andreas",
-        id: 17,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
-        category:"aventura",
-        destacado: false
-      },
-      {
-        title: "GTA san andreas",
-        id: 18,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
-        category:"aventura",
-        destacado: false
-      },
-      {
-        title: "GTA san andreas",
-        id: 19,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
-        category:"aventura",
-        destacado: false
-      },
-      {
-        title: "GTA san andreas",
-        id: 20,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
-        category:"accion",
-        destacado: false
-      },
-      {
-        title: "The legend of zelda nuevo",
-        id: 21,
-        description: "hyrule en peligro nuevo",
-        url: "https://www.zelda.com/breath-of-the-wild/assets/icons/BOTW-Share_icon.jpg",
-        category:"accion",
-        destacado: false
-      },
-      {
-        title: "GTA san andreas",
-        id: 22,
-        description: "Ambientada en los principios de la década de 1990, concretamente en 1992, Grand Theft Auto: San Andreas narra la historia de Carl Johnson (CJ), quien decide volver a Los Santos para asistir al funeral de su madre, Beverly, quien resultó asesinada en un tiroteo.",
-        url: "https://images5.alphacoders.com/596/596248.jpg",
+        description: "Vive la emoción del mayor torneo futbolístico con EA SPORTS FIFA 23 y la actualización de la FIFA World Cup masculina. EA SPORTS FIFA 23 lleva el juego del mundo al campo, con la tecnología HyperMotion2 que ofrece una experiencia de juego aún más realista, tanto la FIFA World Cup masculina como la femenina, la incorporación de equipos femeninos, funciones de juego cruzado y mucho más. Disfruta de una autenticidad única con más de 19 000 jugadores, más de 700 equipos, 100 estadios y más de 30 ligas en FIFA 23.",
+        url: "https://images2.alphacoders.com/127/1276415.jpg",
         category:"deportes",
+        destacado: false
+      },
+      {
+        title: "Inazuma Eleven: Victory Road of Heroes",
+        id: 15,
+        description: "Inazuma Eleven Ares es la nueva entrega de la famosa saga de videojuegos de fútbol con toques de rol y acción. Este capítulo será un proyecto transmedia en el que nos contará su historia a través de un anime y de un videojuego, ofreciendo interactividad entre ambas versiones y formatos.",
+        url: "https://images4.alphacoders.com/675/675017.jpg",
+        category:"deportes",
+        destacado: false
+      },
+      {
+        title: "Paragon",
+        id: 16,
+        description: "Paragon para PC es un juego de acción estilo MOBA que sigue el modelo gratuito. Tendremos que acabar con la base del equipo rival en mapas parecidos a los MOBA tipo League of Legends, con tres pasillos que defender con torres. Dentro de las partidas ganaremos experiencia e iremos mejorando a nuestros héroes.",
+        url: "https://images2.alphacoders.com/731/731784.png",
+        category:"estrategia",
+        destacado: false
+      },
+      {
+        title: "Metal Slug Tactics",
+        id: 17,
+        description: "Metal Slug regresa con una nueva entrega de este universo. Descubre una nueva faceta del emblemático run'n'gun y sumérgete en un dinámico juego de rol táctico con elementos de roguelike. Divertido y desenfadado, Metal Slug Tactics coge los elementos que hacen que Metal Slug sea tan especial y único y los lleva al género táctico.",
+        url: "https://fs-prod-cdn.nintendo-europe.com/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_MetalSlugTactics.jpg",
+        category:"estrategia",
+        destacado: false
+      },
+      {
+        title: "eFootball 2022",
+        id: 18,
+        description: "Ya está aquí una nueva era del fútbol virtual: \"PES\" evoluciona para convertirse en \"eFootball\". Disfruta ya de un nuevo capítulo en los juegos de fútbol con \"eFootball\" con este título gratuito actualizado a la nueva temporada 22/23, con mejoras gráficas y plantillas al día.",
+        url: "https://img.konami.com/kde_cms/eu_publish/uploads/ef2022-kv_1920x1080-600x338.jpg",
+        category:"deportes",
+        destacado: false
+      },
+      {
+        title: "Horizon Forbidden West",
+        id: 19,
+        description: "Horizon 2: Forbbiden West es la segunda parte de Horizon: Zero Dawn, el videojuego de acción en tercera persona y mundo abierto de Guerrilla Games para PlayStation 5 en exclusiva. Auspiciado por Sony, y como una de las nuevas sagas que han demostrado su poder y presencia en la sobremesa, nos narrará una épica historia de ciencia ficción postapocalíptica en la que la humanidad intenta sobrevivir tras la aparición de una serie de máquinas y robots que han sustituido a los seres vivos como especie dominante en la Tierra.",
+        url: "https://images6.alphacoders.com/108/1082417.jpg",
+        category:"aventura",
+        destacado: false
+      },
+      {
+        title: "The Callisto Protocol",
+        id: 20,
+        description: "The Callisto Protocol es un juego de acción y terror con planteamiento de survival horror para PS5, Xbox Series S/X y PC que lleva a los jugadores a una historia que transcurre en el año 2320 en Calisto, uno de los satélites de Júpiter. El objetivo del título es marcar un punto de inflexión en el género de horror y supervivencia en esta nueva generación, justo como hizo Dead Space.",
+        url: "https://images3.alphacoders.com/128/1288485.jpg",
+        category:"aventura",
+        destacado: false
+      },
+      {
+        title: "Resident Evil 4 Remake",
+        id: 21,
+        description: "Resident Evil 4 es un remake del Resident Evil 4 original del 2005.Conservando la esencia del juego original, Resident Evil 4 es la experiencia de Survival Horror definitiva en la cual se cruzan la vida y la muerte, el terror y la catarsis. Una experiencia que ha sido enriquecida con mecánicas de juego actualizadas, una historia reimaginada y gráficos de última generación.",
+        url: "https://images4.alphacoders.com/124/1244847.jpg",
+        category:"aventura",
+        destacado: false
+      },
+      {
+        title: "Fire Emblem Engage",
+        id: 22,
+        description: "La nueva entrega de la serie Fire Emblem se desarrolla en Elyos, un continente formado por cuatro naciones que rodean un Tierra Sagrada. Hace mil años se desencadenó una cruenta guerra entre Elyos y el Dragón Caído. Durante el conflicto, los habitantes de Elyos invocaron a héroes de otros mundos para que los ayudaran: los llamados Emblemas. Los guerreros de las distintas naciones lucharon unidos junto a ellos y, finalmente, lograron desterrar al Dragon Caído. Sin embargo, ciertas señales auguran el inminente regreso de este temible enemigo.",
+        url: "https://images4.alphacoders.com/127/1272160.jpg",
+        category:"estrategia",
         destacado: false
       },
       {
