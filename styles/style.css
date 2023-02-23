@@ -18,12 +18,23 @@
   border: 1px solid #3ca3c3;
 }
 
-body{
-  background-color: #161616;
+.bodyBgDark{
+  background: linear-gradient(rgba(0,0,0,.60) 0%, rgba(0,0,0,.60) 100%), url(../assets/bgDark.jpg);
+  background-position: center center;
 }
 
-nav{
+.bodyBgLight{
+  background: linear-gradient(rgba(0,0,0,.52) 0%, rgba(0,0,0,.50) 100%), url(../assets/bgLight.jpg);
+  background-position: center center;
+}
+
+.navBgDark{
   background-color: #1c1c1c;
+  border-bottom: solid 2px  rgb(53, 53, 53);
+}
+
+.navBgLight{
+  background-color: #00063ff0;
   border-bottom: solid 2px  rgb(53, 53, 53);
 }
 
@@ -31,8 +42,17 @@ nav{
   background-color: #272727;
 }
 
+.bgCardsLight{
+  background-color: #c8c8c8;
+  border: 1px solid black;
+}
+
 .bgCardsGrad{
   background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgb(58, 58, 58) 100%, rgb(17, 17, 17) 100%);;
+}
+
+.bgCardsGradLight{
+  background: linear-gradient(0deg, rgb(107, 107, 107) 0%, rgb(230, 230, 230) 100%, rgb(107, 107, 107) 100%);;
 }
 
 .botones{
@@ -69,4 +89,45 @@ footer{
 	background-color: #0000009f !important;
 	color: #fff !important;
 	border: rgba(128, 128, 128, 0.491) 2px solid !important;
+}
+
+.interruptor{
+  position: relative;
+  width: 80px;
+  height: 40px;
+  background: #212121;
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px rgb(88, 101, 248);
+}
+
+.interruptor input{
+  appearance: none;
+}
+
+.interruptor span{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  background: rgb(255, 255, 255);
+  border: 6px solid #212121;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moon{
+  filter: drop-shadow(0px 0px 4px #fff);
+  width: 20px;
+  height: 20px;
+}
+
+.interruptor input:checked ~ span{
+  left: 40px;
+  background: #333;
+  color: white;
 }

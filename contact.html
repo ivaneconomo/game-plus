@@ -10,9 +10,9 @@
   <link rel="stylesheet" href="./styles/form.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body class="bodyBgDark">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg navBgDark navbar-dark py-3">
       <div class="container-fluid">
         <div>
           <img src="./assets/logo.png" alt="logo" width="65px">
@@ -32,14 +32,20 @@
             <li class="nav-item">
               <a class="nav-link" href="./register.html">Registro</a>
             </li>
+            <li class="nav-item">
+              <label class="interruptor">
+                <input type="checkbox" id="modeDarkLight">
+                <span><ion-icon name="moon-outline" class="moon"></ion-icon></span>
+              </label>
+            </li>
         </div>
       </div>
     </nav>
   </header>
-  <main>
+  <main class="text-white">
     <div class="container-fluid mt-5 mb-5">
       <div class="row justify-content-center">
-        <form class="form bgCards text-white" action="https://formspree.io/f/mqkoqqkv"
+        <form class="form bgCards" action="https://formspree.io/f/mqkoqqkv"
         method="POST">
           <div class="form__container">
             <h2 class="form__title">Contactanos</h2>
@@ -110,6 +116,9 @@
       </div>
     </section>
   </footer>
+  <script src="./js/modeDL.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

@@ -168,7 +168,7 @@ const primerosPost = () =>{
       identificador = `<p class="d-none" id="ultimoPost">5</p>`;
     };
     let card = document.createElement('div');
-    card.className = 'col-12 rounded border border-2 border-white mb-2 text-white p-3 bgPos';
+    card.className = 'col-12 rounded mb-2 p-3 bgPos';
     card.innerHTML = `
     <div class="mb-2">
       <h5 class="me-2 d-inline">Título:</h5>
@@ -234,7 +234,7 @@ const Vermaspost = () =>{
       };
   
       let card = document.createElement('div');
-      card.className = 'col-12 rounded border border-2 border-white mb-2 text-white p-3 bgPos';
+      card.className = 'col-12 rounded mb-2 p-3 bgPos';
       card.innerHTML = `
       <div class="mb-2">
         <h5 class="me-2 d-inline">Título:</h5>
@@ -270,6 +270,7 @@ const Vermaspost = () =>{
     }
   }
   MoElDe();
+  modo();
 }
 
 document.getElementById("inputSearch").addEventListener("input", function() {
@@ -286,6 +287,7 @@ document.getElementById("inputSearch").addEventListener("input", function() {
     document.getElementById('buttonvermas').classList.replace('d-none', 'd-flex');
     document.getElementById('posts').classList.remove('postsScroll');
     primerosPost();
+    modo();
   }else if(postFiltrados.length != 0){
     postFiltrados.forEach((item)=>{
       let destacado;
@@ -300,7 +302,7 @@ document.getElementById("inputSearch").addEventListener("input", function() {
       }
   
       const buscados = document.createElement("div");
-      buscados.className = 'col-12 rounded border border-2 border-white mb-2 text-white p-3 bgPos';
+      buscados.className = 'col-12 rounded mb-2 p-3 bgPos';
       buscados.innerHTML = `
       <div class="mb-2">
         <h5 class="me-2 d-inline">Título:</h5>
@@ -335,9 +337,11 @@ document.getElementById("inputSearch").addEventListener("input", function() {
     if(postFiltrados.length > 5){
       document.getElementById('posts').classList.add('postsScroll');
       MoElDe();
+      modo();
     }else{
       document.getElementById('posts').classList.remove('postsScroll');
       MoElDe();
+      modo();
     }
   }else{
     document.getElementById('posts').innerHTML = '<h4 class="mt-3 text-white text-center">Sin resultados</h4>';
@@ -359,6 +363,7 @@ const searchButton = document.getElementById("buttonSearch").addEventListener("c
     document.getElementById('buttonvermas').classList.replace('d-none', 'd-flex');
     document.getElementById('posts').classList.remove('postsScroll');
     primerosPost();
+    modo();
   }else if(postFiltrados.length != 0){
     postFiltrados.forEach((item)=>{
       let destacado;
@@ -373,7 +378,7 @@ const searchButton = document.getElementById("buttonSearch").addEventListener("c
       }
   
       const buscados = document.createElement("div");
-      buscados.className = 'col-12 rounded border border-2 border-white mb-2 text-white p-3 bgPos';
+      buscados.className = 'col-12 rounded mb-2 p-3 bgPos';
       buscados.innerHTML = `
       <div class="mb-2">
         <h5 class="me-2 d-inline">Título:</h5>
@@ -408,14 +413,17 @@ const searchButton = document.getElementById("buttonSearch").addEventListener("c
     if(postFiltrados.length > 5){
       document.getElementById('posts').classList.add('postsScroll');
       MoElDe();
+      modo();
     }else{
       document.getElementById('posts').classList.remove('postsScroll');
       MoElDe();
+      modo();
     }
   }else{
-    document.getElementById('posts').innerHTML = '<h4 class="mt-3 text-white text-center">Sin resultados</h4>';
+    document.getElementById('posts').innerHTML = '<h4 class="mt-3 text-center">Sin resultados</h4>';
     document.getElementById('posts').classList.remove('postsScroll');
   }
+  modo();
 });
 
 const logout = ()=>{

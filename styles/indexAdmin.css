@@ -12,7 +12,13 @@
 }
 
 .bgPos{
-  background-color: #1f1f1f
+  background-color: #1f1f1f;
+  border: 2px solid #dadada;
+}
+
+.bgPosLight{
+  background-color: #cccccc;
+  border: 2px solid rgb(38, 38, 38);
 }
 
 .contenidoPost{

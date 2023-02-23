@@ -61,7 +61,7 @@ games.map((resp) =>{
       let juego = document.createElement('a');
       juego.setAttribute('type', 'button');
       juego.className = 'juego';
-      juego.innerHTML= `<p class="d-none gameMod">${resp.id}</p><img src="${resp.url}" alt="portadadejuego">`;
+      juego.innerHTML= `<p class="d-none gameMod">${resp.id}</p><img height="768px" src="${resp.url}" alt="portadadejuego">`;
       document.getElementById('geAventura').appendChild(juego);
     }
   }
@@ -151,5 +151,4 @@ const logout = ()=>{
   localStorage.removeItem('UserLog');
   window.location = './login.html';
 }
-
 

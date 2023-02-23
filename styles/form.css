@@ -7,7 +7,6 @@
 }
 
 body{
-  background-color: #144272;
   min-height: 100vh;
   width: 100;
   font-family: 'Montserrat', sans-serif;
@@ -55,7 +54,6 @@ body{
 .form__cta{
   font-family: inherit;
   background-color: #089fe0;
-  color: #ffffff;
   border: none;
   font-weight: 300;
   font-size: 1rem;
