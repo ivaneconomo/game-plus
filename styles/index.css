@@ -52,13 +52,20 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-  background-color: #3434349d;
   border: solid black 2px;
   transition: 1.2s ease all;
 }
 
+.contenedorBgDark{
+	background-color: #41414196;
+}
+
+.contenedorBgLight{
+	background-color: #c7c7c7a2;
+}
+
 .contenedor-principal:hover{
-  background-color: #00000061;
+  background-color: #0000009c;
 }
 
 .flecha-izquierda, .flecha-derecha {

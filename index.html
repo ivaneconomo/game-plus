@@ -12,9 +12,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body class="bodyBgDark">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg navbar-dark navBgDark py-3">
       <div class="container-fluid">
         <div>
           <img src="./assets/logo.png" alt="logo" width="65px">
@@ -37,21 +37,27 @@
             <li class="nav-item">
               <a type="button" class="nav-link" onclick="logout()">Cerrar sesión</a>
             </li>
+            <li class="nav-item">
+              <label class="interruptor">
+                <input type="checkbox" id="modeDarkLight">
+                <span><ion-icon name="moon-outline" class="moon"></ion-icon></span>
+              </label>
+            </li>
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="py-4">
+  <main class="py-4 text-white">
     <div id="gameDes">
     </div>
     </div>
 
     <div class="container-carr">
-      <div class="text-white mt-4 ms-4 catEgory" data-aos="fade-right">
+      <div class="mt-4 ms-4 catEgory text-white" data-aos="fade-right">
         <h3>Acción</h3>
       </div>
-      <div class="contenedor-principal" data-aos="fade-up">
+      <div class="contenedor-principal contenedorBgDark" data-aos="fade-up">
         <button role="button" id="flecha-izquierda-Ac" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
         <div class="contenedor-carousel" id="carrAccion">
           <div class="carousel" id="geAccion">
@@ -63,10 +69,10 @@
     </div>
 
     <div class="container-carr">
-      <div class="text-white mt-4 ms-4 catEgory" data-aos="fade-right">
+      <div class="mt-4 ms-4 catEgory text-white" data-aos="fade-right">
         <h3>Deportes</h3>
       </div>
-      <div class="contenedor-principal" data-aos="fade-up">
+      <div class="contenedor-principal contenedorBgDark" data-aos="fade-up">
         <button role="button" id="flecha-izquierda-De" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
         <div class="contenedor-carousel" id="carrDeportes">
           <div class="carousel" id="geDeportes">
@@ -78,10 +84,10 @@
     </div>
 
     <div class="container-carr">
-      <div class="text-white mt-4 ms-4 catEgory" data-aos="fade-right">
+      <div class="mt-4 ms-4 catEgory text-white" data-aos="fade-right">
         <h3>Aventura</h3>
       </div>
-      <div class="contenedor-principal" data-aos="fade-up">
+      <div class="contenedor-principal contenedorBgDark" data-aos="fade-up">
         <button role="button" id="flecha-izquierda-Av" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
         <div class="contenedor-carousel" id="carrAventura">
           <div class="carousel" id="geAventura">
@@ -93,10 +99,10 @@
     </div>
 
     <div class="container-carr mb-5">
-      <div class="text-white mt-4 ms-4 catEgory" data-aos="fade-right">
+      <div class="mt-4 ms-4 catEgory text-white" data-aos="fade-right">
         <h3>Estrategia</h3>
       </div>
-      <div class="contenedor-principal" data-aos="fade-up">
+      <div class="contenedor-principal contenedorBgDark" data-aos="fade-up">
         <button role="button" id="flecha-izquierda-Es" class="flecha-izquierda"><i class="fa-solid fa-angle-left"></i></button>
         <div class="contenedor-carousel" id="carrEstrategia">
           <div class="carousel" id="geEstrategia">
@@ -169,7 +175,7 @@
       </div>
     </section>
   </footer>
-
+  <script src="./js/modeDL.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/index.js"></script>
   <script src="https://kit.fontawesome.com/9b9406eee5.js" crossorigin="anonymous"></script>
@@ -178,5 +184,7 @@
   <script>
     AOS.init();
   </script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

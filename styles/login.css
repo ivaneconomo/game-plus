@@ -33,13 +33,12 @@ body{
 }
 
 .newPass{
-  color: #fff;
   cursor: pointer;
   transition: 0.3s;
 }
 
 .newPass:hover{
-  color: rgb(184, 184, 184);
+  color: rgb(184, 184, 184) !important;
 }
 
 .button-close{

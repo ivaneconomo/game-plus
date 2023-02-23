@@ -10,9 +10,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
+<body class="bodyBgDark">
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark py-3">
+    <nav class="navbar navbar-expand-lg navBgDark navbar-dark py-3">
       <div class="container-fluid">
         <div>
           <img src="./assets/logo.png" alt="logo" width="65px">
@@ -32,17 +32,23 @@
             <li class="nav-item">
               <a class="nav-link" href="./register.html">Registro</a>
             </li>
+            <li class="nav-item">
+              <label class="interruptor">
+                <input type="checkbox" id="modeDarkLight">
+                <span><ion-icon name="moon-outline" class="moon"></ion-icon></span>
+              </label>
+            </li>
         </div>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main class="text-white">
 
     <div class="container-fluid text-center py-5">
       <div class="row">
         <div class="col-12 px-4 px-lg-0 d-md-flex flex-md-column flex-lg-row justify-content-lg-around mt-3">
-          <div class="card mb-4 mb-lg-0 col-12 col-lg-5 text-white borGlow tarjeta" style="max-width: auto;">
+          <div class="card mb-4 mb-lg-0 col-12 col-lg-5 borGlow tarjeta" style="max-width: auto;">
             <div class="row g-0 bgCards" style="height: 100%;">
               <div class="col-md-4 px-2 px-md-0 ps-md-2 py-2 py-lg-0 d-flex flex-column justify-content-center">               
                 <img src="./assets/Leonel.jpg" class="card-img-top rounded-circle border border-2 border-white"  alt="#">
@@ -58,7 +64,7 @@
               </div>
             </div>
           </div>
-          <div class="card col-12 col-lg-5 mb-4 mb-lg-0 text-white borGlow tarjeta" style="max-width: auto;">
+          <div class="card col-12 col-lg-5 mb-4 mb-lg-0 borGlow tarjeta" style="max-width: auto;">
             <div class="row g-0 bgCards" style="height: 100%;">
               <div class="col-md-4 px-2 px-md-0 ps-md-2 py-2 py-lg-0 d-flex flex-column justify-content-center">               
                 <img src="./assets/Ivan.png" class="card-img-top rounded-circle border border-2 border-white"  alt="#">
@@ -75,7 +81,7 @@
         </div>
 
         <div class="col-12 px-4 px-lg-0 d-md-flex flex-md-column flex-lg-row justify-content-lg-around mt-lg-3">
-          <div class="card mb-4 mb-lg-0 col-12 col-lg-5 text-white borGlow tarjeta" style="max-width: auto;">
+          <div class="card mb-4 mb-lg-0 col-12 col-lg-5 borGlow tarjeta" style="max-width: auto;">
             <div class="row g-0 bgCards" style="height: 100%;">
               <div class="col-md-4 px-2 px-md-0 ps-md-2 py-2 py-lg-0 d-flex flex-column justify-content-center">               
                 <img src="./assets/Carlos.png" class="card-img-top rounded-circle border border-2 border-white"  alt="#">
@@ -89,7 +95,7 @@
               </div>
             </div>
           </div>
-          <div class="card col-12 col-lg-5 text-white borGlow tarjeta" style="max-width: auto;">
+          <div class="card col-12 col-lg-5 borGlow tarjeta" style="max-width: auto;">
             <div class="row g-0 bgCards" style="height: 100%;">
               <div class="col-md-4 px-2 px-md-0 ps-md-2 py-2 py-lg-0 d-flex flex-column justify-content-center">               
                 <img src="./assets/Mauro.jpeg" class="card-img-top rounded-circle border border-2 border-white"  alt="#">
@@ -167,5 +173,8 @@
     </section>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script src="./js/modeDL.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

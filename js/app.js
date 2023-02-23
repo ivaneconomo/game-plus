@@ -414,3 +414,15 @@ const compro = (compr) => {
   }
 }
 compro(user);
+
+
+const mode = JSON.parse(localStorage.getItem('ModeDL'));
+const comprobarMode = (compr) => {
+  if(compr == undefined){
+    const modee = JSON.stringify({
+      mode: 'dark'
+    });
+    localStorage.setItem('ModeDL', modee);
+  }
+}
+comprobarMode(mode);

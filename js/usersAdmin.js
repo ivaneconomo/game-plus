@@ -156,7 +156,7 @@ const primerosUsers = () =>{
         identificador = `<p class="d-none" id="ultimoUser">5</p>`;
       };
       let card = document.createElement('div');
-      card.className = 'col-12 rounded border border-2 border-white mb-2 text-white p-3 bgPos';
+      card.className = 'col-12 rounded mb-2 p-3 bgPos';
       card.innerHTML = `
       <div class="mb-2">
         <h5 class="me-2 d-inline">Nombre:</h5>
@@ -199,6 +199,7 @@ document.getElementById("inputSearch").addEventListener("input", function() {
 
   if(searchText == ''){
     primerosUsers();
+    modo();
   }else if(usersFiltrados.length != 0){
     usersFiltrados.forEach((item)=>{
       if(item.alta != 'admin'){
@@ -216,7 +217,7 @@ document.getElementById("inputSearch").addEventListener("input", function() {
           buttonAlta = `<button class="btn botones" id="userAltaId${item.id}">Dar Alta</button>`;
         }
         let card = document.createElement('div');
-        card.className = 'col-12 rounded border border-2 border-white mb-2 text-white p-3 bgPos';
+        card.className = 'col-12 rounded mb-2 p-3 bgPos';
         card.innerHTML = `
         <div class="mb-2">
           <h5 class="me-2 d-inline">Nombre:</h5>
@@ -244,14 +245,17 @@ document.getElementById("inputSearch").addEventListener("input", function() {
     if(usersFiltrados.length > 5){
       document.getElementById('userss').classList.add('postsScroll');
       MoElDe();
+      modo();
     }else{
       document.getElementById('userss').classList.remove('postsScroll');
       MoElDe();
+      modo();
     }
   }else{
-    document.getElementById('userss').innerHTML = '<h4 class="mt-3 text-white text-center">Sin resultados</h4>';
+    document.getElementById('userss').innerHTML = '<h4 class="mt-3 text-center">Sin resultados</h4>';
     document.getElementById('userss').classList.remove('postsScroll');
   }
+  modo();
 });
 
 const logout = ()=>{
